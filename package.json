@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "pm2-runtime start index.js"
   },
   "author": "",
   "license": "ISC",
@@ -12,6 +13,7 @@
     "@open-wa/wa-automate": "^1.9.41",
     "fs-extra": "^9.0.0",
     "mime-types": "^2.1.27",
-    "moment": "^2.26.0"
+    "moment": "^2.26.0",
+    "pm2": "^4.4.0"
   }
 }

@@ -49,7 +49,7 @@ async function msgHandler (client, message) {
         const { id, pushname } = sender
         const { name } = chat
         const time = moment(t * 1000).format('DD/MM HH:mm:ss')
-        const commands = ['#sticker', '#halo']
+        const commands = ['#sticker', '#halo', '#stiker', '#anjing']
         const cmds = commands.map(x => x + '\\b').join('|')
         const cmd = type === 'chat' ? body.match(new RegExp(cmds, 'gi')) : type === 'image' && caption ? caption.match(new RegExp(cmds, 'gi')) : ''
 
@@ -68,7 +68,7 @@ async function msgHandler (client, message) {
                         const imageBase64 = `data:${quotedMsg.mimetype};base64,${mediaData.toString('base64')}`
                         await client.sendImageAsSticker(from, imageBase64)
                     } else {
-                        client.sendText(from, 'Tidak ada gambar! Untuk membuat sticker kirim gambar dengan caption #sticker ')
+                        client.sendText(from, 'Kirim gambar pake hashtag #sticker GOBLOK !')
                     }
                     break
                 case '#halo':
@@ -76,7 +76,7 @@ async function msgHandler (client, message) {
                     break
             }
         } else {
-          if (!isGroupMsg) console.log(color('[RECV]'), color(time, 'yellow'), 'Message from', color(pushname))
+            if (!isGroupMsg) console.log(color('[RECV]'), color(time, 'yellow'), 'Message from', color(pushname))
             if (isGroupMsg) console.log(color('[RECV]'), color(time, 'yellow'), 'Message from', color(pushname), 'in', color(name))
         }
     } catch (err) {
@@ -85,11 +85,11 @@ async function msgHandler (client, message) {
 }
 
 function color (text, color) {
-  switch (color) {
-    case 'red': return '\x1b[31m' + text + '\x1b[0m'
-    case 'yellow': return '\x1b[33m' + text + '\x1b[0m'
-    default: return '\x1b[32m' + text + '\x1b[0m' // default is green
-  }
+    switch (color) {
+        case 'red': return '\x1b[31m' + text + '\x1b[0m'
+        case 'yellow': return '\x1b[33m' + text + '\x1b[0m'
+        default: return '\x1b[32m' + text + '\x1b[0m' // default is green
+    }
 }
 
 startServer()

@@ -89,6 +89,7 @@ async function msgHandler (client, message) {
             `"Sudahkah dirimu bersyukur hari ini ?"`,
             `"Niatnya mau halalin kamu , tapi namanya juga babi jadi ga bisa halal"`,
             `"Kamu ini manusia apa bintang kecil sih? kok bodohnya jauh tinggi menghias angkasa"`,
+            `"Aku gasuka debat, sukanya kamu. Jadi tolong jangan diperbedatkan."`,
         ];
         const misuh = [
             'ANAK BABI',

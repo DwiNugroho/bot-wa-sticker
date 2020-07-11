@@ -151,10 +151,10 @@ async function msgHandler (client, message) {
                     break
                 case 'hi':
                 case 'hai':
-                        client.sendText(from, `Halo ${pushname ? pushname : ''}`);
+                        client.sendText(from, `Halo ${pushname ? pushname : 'Sayang'}`);
                     break;
                 case 'halo':
-                        client.sendText(from, `Hi ${pushname ? pushname : ''}`);
+                        client.sendText(from, `Hi ${pushname ? pushname : 'Sayang'}`);
                     break
             }
         } else {

@@ -52,7 +52,19 @@ async function msgHandler (client, message) {
         const { id, pushname } = sender
         const { name } = chat
         const time = moment(t * 1000).format('DD/MM HH:mm:ss')
-        const commands = ['#sticker', '#stiker' ,'#halo', '#misuh', 'kojok', 'dimas', '#quote', '#quotes']
+        const commands = [
+            '#sticker',
+            '#stiker',
+            '#halo',
+            '#misuh',
+            'kojok',
+            'dimas',
+            '#quote',
+            '#quotes',
+            'halo',
+            'hi',
+            'hai',
+        ]
         const cmds = commands.map(x => x + '\\b').join('|')
         const cmd = type === 'chat' ? body.match(new RegExp(cmds, 'gi')) : type === 'image' && caption ? caption.match(new RegExp(cmds, 'gi')) : ''
         const quotes = [
@@ -128,19 +140,21 @@ async function msgHandler (client, message) {
                         client.sendText(from, 'Hai');
                     break
                 case 'kojok':
-                        client.sendText(from, 'Dimas Kojok Babi');
-                    break
                 case 'dimas':
-                        client.sendText(from, 'Dimas Kojok Babi');
+                        client.sendText(from, 'Dimas biasa dipanggil Kojok omahe ngguri tower');
                     break
                 case '#misuh':
                         client.sendText(from, misuh[Math.floor(Math.random() * misuh.length)]);
                     break
                 case '#quotes':
-                        client.sendText(from, quotes[Math.floor(Math.random() * quotes.length)]);
-                    break;
                 case '#quote':
                         client.sendText(from, quotes[Math.floor(Math.random() * quotes.length)]);
+                    break
+                case 'hi':
+                case 'hai':
+                        client.sendText(from, `Halo ${pushname ? `@${pushname}` : ''}`);
+                case 'halo':
+                        client.sendText(from, `Hi ${pushname ? `@${pushname}` : ''}`);
                     break
             }
         } else {

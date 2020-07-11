@@ -64,6 +64,7 @@ async function msgHandler (client, message) {
             'halo',
             'hi',
             'hai',
+            'bot',
         ]
         const cmds = commands.map(x => x + '\\b').join('|')
         const cmd = type === 'chat' ? body.match(new RegExp(cmds, 'gi')) : type === 'image' && caption ? caption.match(new RegExp(cmds, 'gi')) : ''
@@ -156,6 +157,9 @@ async function msgHandler (client, message) {
                     break;
                 case 'halo':
                         client.sendText(from, `Hi ${pushname ? pushname : 'Sayang'}`);
+                    break
+                case 'bot':
+                        client.sendText(from, 'Apasi nyebut nyebut nama gw? Jago lo?');
                     break
             }
         } else {

@@ -82,6 +82,13 @@ async function msgHandler (client, message) {
             `"Semakin dewasa semakin gak pengen pamer kekayaan, pamer pacar, pamer gadget mahal. bukannya takut riya, cuma emang gak punya aja."`,
             `"Kuntilanak aja dimana mana ketawa, masa lu yang sejenisnya cemberut mulu"`,
             `"Kamu jangan main ke rumahku ya, keluargaku takut sama anjing"`,
+            `"Bayangin, aku nikah sama Ibukmu. aww malu bingitt!!"`,
+            `“Hidup ini hanya sekali dan peluang itu juga sekali munculnya, keduanya tidak datang dua kali”`,
+            `"Penampilan memang tidak meyakinkan bahwa dia itu pintar atau bodoh"`,
+            `"Jangan pernah merasa tersusah di dunia, karena masih ada yang lebih susah, bersyukurlah”`,
+            `"Sudahkah dirimu bersyukur hari ini ?"`,
+            `"Niatnya mau halalin kamu , tapi namanya juga babi jadi ga bisa halal"`,
+            `"Kamu ini manusia apa bintang kecil sih? kok bodohnya jauh tinggi menghias angkasa"`,
         ];
         const misuh = [
             'ANAK BABI',
@@ -102,6 +109,11 @@ async function msgHandler (client, message) {
             'LAMBEMU ISO MENENG RAK',
             'NDASMU',
             'UTEKE NING TILIS',
+            'RAIMU COKK !!',
+            'SHARE LOKASI MU TAK PARANI SAIKII',
+            'GUATELL',
+            'TEMEMPIKK',
+            'BAJIGURR',
         ];
 
 

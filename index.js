@@ -111,18 +111,6 @@ async function msgHandler (client, message) {
             const args = body.trim().split(' ')
             switch (cmd[0].toLowerCase()) {
                 case '#sticker':
-                    if (isMedia) {
-                        const mediaData = await decryptMedia(message)
-                        const imageBase64 = `data:${mimetype};base64,${mediaData.toString('base64')}`
-                        await client.sendImageAsSticker(from, imageBase64)
-                    } else if (quotedMsg && quotedMsg.type == 'image') {
-                        const mediaData = await decryptMedia(quotedMsg)
-                        const imageBase64 = `data:${quotedMsg.mimetype};base64,${mediaData.toString('base64')}`
-                        await client.sendImageAsSticker(from, imageBase64)
-                    } else {
-                        client.sendText(from, 'Kirim gambar pake hashtag #sticker GOBLOK !')
-                    }
-                    break
                 case '#stiker':
                     if (isMedia) {
                         const mediaData = await decryptMedia(message)
@@ -153,6 +141,7 @@ async function msgHandler (client, message) {
                 case 'hi':
                 case 'hai':
                         client.sendText(from, `Halo ${pushname ? pushname : ''}`);
+                    break;
                 case 'halo':
                         client.sendText(from, `Hi ${pushname ? pushname : ''}`);
                     break

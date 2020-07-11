@@ -128,7 +128,6 @@ async function msgHandler (client, message) {
                         client.sendText(from, 'Hai');
                     break
                 case 'kojok':
-                case 'dimas':
                         client.sendText(from, 'Dimas biasa dipanggil Kojok omahe ngguri tower');
                     break
                 case '#misuh':

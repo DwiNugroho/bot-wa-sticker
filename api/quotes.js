@@ -1,0 +1,26 @@
+export const quotes = [
+  `"Percuma kusiapkan dunia bila yang kamu inginkan cuma bapakku"`,
+  `"Nyari duit memang susah, yang gampang ya ninggalin sholat"`,
+  `"gapapa ga dapet kamu, yang penting dapet bapakmu"`,
+  `"lembabkan bibirmu, mulutmu kasar"`,
+  `"Namanya manusia hidup ya diselimuti masalah, kalo diselimuti wijen ya jadi onde onde aja"`,
+  `"Are you some kind of kambing, because you make my heart terombang ambing"`,
+  `"Kalo kamu nyari yang sesuai selera kamu, mungkin kamu cocoknya sama indomie"`,
+  `"Daripada melukai diri sendiri lebih baik mabok saja"`,
+  `"itu yang pacaran beda agama, Tuhannya berantem ga ya?"`,
+  `"Pengen ngebalas kelakuanmu tapi Aku sadar manusia tidak boleh jahat sama binatang"`,
+  `"Bayangin kamu dikick dari kartu keluarga cuma gara gara bapakmu gabut"`,
+  `"Semakin dewasa semakin gak pengen pamer kekayaan, pamer pacar, pamer gadget mahal. bukannya takut riya, cuma emang gak punya aja."`,
+  `"Kuntilanak aja dimana mana ketawa, masa lu yang sejenisnya cemberut mulu"`,
+  `"Kamu jangan main ke rumahku ya, keluargaku takut sama anjing"`,
+  `"Bayangin, aku nikah sama Ibukmu. aww malu bingitt!!"`,
+  `“Hidup ini hanya sekali dan peluang itu juga sekali munculnya, keduanya tidak datang dua kali”`,
+  `"Penampilan memang tidak meyakinkan bahwa dia itu pintar atau bodoh"`,
+  `"Jangan pernah merasa tersusah di dunia, karena masih ada yang lebih susah, bersyukurlah”`,
+  `"Sudahkah dirimu bersyukur hari ini ?"`,
+  `"Niatnya mau halalin kamu , tapi namanya juga babi jadi ga bisa halal"`,
+  `"Kamu ini manusia apa bintang kecil sih? kok bodohnya jauh tinggi menghias angkasa"`,
+  `"Aku gasuka debat, sukanya kamu. Jadi tolong jangan diperbedatkan."`,
+];
+
+export default quotes;

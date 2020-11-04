@@ -1,0 +1,27 @@
+export const misuh = [
+  "ANAK BABI",
+  "NGENTOTT",
+  "ASUU",
+  "JANCOKK",
+  "CANGKEMU BOSOK",
+  "COCOTE KOYOK TAEK",
+  "BACOD ANJENG",
+  "TAEKK",
+  "SILITT",
+  "KELAMIN JANTANN",
+  "DAJJAL",
+  "COCOTE NING TILIS",
+  "KEMEM",
+  "RAIMU GELEM TAK DUPAK?",
+  "GELOD AYOO",
+  "LAMBEMU ISO MENENG RAK",
+  "NDASMU",
+  "UTEKE NING TILIS",
+  "RAIMU COKK !!",
+  "SHARE LOKASI MU TAK PARANI SAIKII",
+  "GUATELL",
+  "TEMEMPIKK",
+  "BAJIGURR",
+];
+
+export default misuh;

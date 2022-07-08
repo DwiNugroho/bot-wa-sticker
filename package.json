@@ -13,7 +13,7 @@
     "@open-wa/wa-automate": "^3.0.11",
     "fs-extra": "^9.0.0",
     "mime-types": "^2.1.27",
-    "moment": "^2.26.0",
+    "moment": "^2.29.4",
     "pm2": "^4.4.0"
   }
 }
